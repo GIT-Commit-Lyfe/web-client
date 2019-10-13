@@ -1,0 +1,46 @@
+@import "../variables.scss";
+
+.promotion-box-spread {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+
+    @media screen and (max-width: 576px) {
+        display: inline;
+        justify-content: center;
+    }
+}
+
+.landing-product-list {
+    display: inline;
+    justify-content: center;
+}
+
+.jumbotron-quotes-wrapper {
+    margin: 4rem 0rem;
+    display: block;
+    min-height: 14rem;
+    background: lighten( $grey-default, 15%);
+    padding: 1rem 3rem;
+    justify-content: center;
+
+
+    .quotes-box {
+        padding: 1rem 0rem;
+        justify-content: center;
+        text-align: center;
+        width: 60rem;
+        display: flex;
+
+        .text {
+          font-weight: $extra-light;
+          font-size: 1.3rem;
+
+        }
+        .right {
+            >img {
+                transform: scaleX(-1);
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import "../variables.scss";
+
+.promotion-box-wrapper {
+  background-color: $black-default;
+  margin: 0;
+  .promotion-box-content {
+    justify-content: center;
+    padding: 0.3rem 0.2rem;
+    font-size: 0.8rem;
+    p {
+      margin: 0;
+      padding: 0.2rem 0.3rem;
+      color: $white-default;
+    }
+    .promo-title {
+      padding-bottom: 0rem;
+      font-weight: $bold;
+      letter-spacing: 0.16rem;
+      text-transform: uppercase;
+      font-size: 0.6rem
+    }
+    .promo-desc {
+      font-weight: $extra-light;
+      font-size: 0.4rem;
+      letter-spacing: 0.1rem;
+
+    }
+  }
+
+  .logo-box {
+    display: flex;
+    padding: 0.3rem 0.5rem;
+    justify-content: flex-end;
+    flex-direction: row;
+    
+    .logo {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    text-align: center;
+  }
+}

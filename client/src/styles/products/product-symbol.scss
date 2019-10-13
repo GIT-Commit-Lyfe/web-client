@@ -1,0 +1,39 @@
+@import "../variables.scss";
+
+.product-symbol-wrapper {
+  display: inline-block;
+  border-radius: 2px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  background: #333;
+  color: #fff;
+  padding: 0 10px;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  margin-top: 17.5px;
+
+  > span {
+    border-radius: 2px 0 0 2px;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 5px;
+    position: absolute;
+    left: 0;
+  }
+  .symbol-color {
+    background-color: $brown-default;
+  }
+}
+.year {
+  margin-left: 0.8rem;
+  line-height: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  border: 1px solid $grey-default;
+  padding: 0.25rem 0.6rem;
+  border-radius: 2px;
+}

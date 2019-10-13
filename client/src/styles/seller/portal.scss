@@ -1,0 +1,44 @@
+@import "../variables.scss";
+
+.portal-wrapper {
+  padding: 4rem 1rem 9rem 1rem;
+  // border: 1px solid $grey-default;
+  .uploader-wrapper {
+    > div {
+      justify-content: center;
+    }
+  }
+
+  .upload-box {
+    padding: 0.5rem;
+
+    > div {
+      padding: 0.3rem;
+
+      > div {
+        border: 1px solid $grey-default;
+        padding: 0.3rem;
+      }
+    }
+
+    .text {
+      text-align: center;
+      padding: 0.6rem 0.3rem;
+    }
+  }
+}
+
+.bottom-box-picker {
+  padding: 2rem 3rem 1rem 3rem;
+  border: 1px solid $grey-default;
+
+  // >div {
+  //     display: flex;
+  //     justify-content: center;
+  //     >div {
+  //         >p {
+  //             text-align: center;
+  //         }
+  //     }
+  // }
+}

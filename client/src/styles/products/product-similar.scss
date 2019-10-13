@@ -1,0 +1,53 @@
+@import "../variables.scss";
+
+.similar-wrapper {
+  display: flex;
+  padding: 1rem 1rem;
+  border: 1px solid $grey-default;
+  border-radius: 3px;
+  margin-top: 0.8rem;
+
+  .arrow-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .arrow-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .similar-display {
+    text-align: center;
+    width: 9rem;
+    height: 9rem;
+    display: inline-block;
+    .img-centerer {
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+    .similar-img {
+      display: inline-block;
+      vertical-align: middle;
+      max-height: 100%;
+      max-width: 100%;
+      
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    
+  }
+}
+
+.arrow {
+  max-width: 1.5rem;
+  transition: all .2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+}

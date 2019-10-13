@@ -1,0 +1,37 @@
+@import "../variables.scss";
+
+.description-wrapper {
+  padding: 3rem 3rem;
+  margin: 1rem 0rem;
+  border: 1px solid $grey-default;
+  border-radius: 4px;
+
+  .bg-drop {
+    position: absolute;
+    background-color: lighten($grey-default, 10%);
+    width: 30rem;
+    height: 2.3rem;
+    z-index: -1;
+    margin-left: 0.5rem;
+
+    @media screen and (max-width: 576px) {
+        position: absolute;
+        background-color: lighten($grey-default, 10%);
+        width: 10rem;
+        height: 4rem;
+        z-index: -1;
+        margin-left: 0.5rem;
+    }
+  }
+  .title {
+    text-transform: uppercase;
+    font-weight: $regular;
+    text-align: left;
+    letter-spacing: 0.3rem;
+  }
+
+  .long-text {
+    font-weight: $extra-light;
+    font-size: 0.8rem;
+  }
+}

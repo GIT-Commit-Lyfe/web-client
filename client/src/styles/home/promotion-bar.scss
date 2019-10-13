@@ -1,0 +1,24 @@
+@import "../variables.scss";
+
+.promotion-bar {
+  background: $black-default;
+  min-height: 1.6rem;
+  display: flex;
+  justify-content: center;
+  .promotion-text {
+    padding: 0.3rem 1rem;
+    color: $white-default;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18rem;
+    @media screen and (max-width: 576px) {
+      font-size: 0.1rem;
+      letter-spacing: 0.10rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 0.5rem;
+      letter-spacing: 0.10rem;
+
+    }
+  }
+}

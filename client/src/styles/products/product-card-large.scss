@@ -1,0 +1,43 @@
+@import "../variables.scss";
+
+.product-card-large-wrapper {
+  padding: 0.3rem 0rem;
+  .product-card-content {
+    justify-content: center;
+    .text {
+      text-align: left;
+    }
+    .img-wrapper {
+      padding: 0.2rem;
+
+      .large-image {
+        object-fit: cover;
+        overflow: hidden;
+        height: 12rem;
+        width: 17rem;
+      }
+    }
+  }
+  .name {
+    text-transform: uppercase;
+    font-weight: $regular;
+    text-align: left;
+    letter-spacing: 0.3rem;
+    padding: 0rem 0.5rem;
+    margin: 0;
+  }
+
+  .ornament {
+    text-align: center;
+    padding: 2rem 0rem;
+
+  }
+
+  .description {
+    padding: 2rem 0.5rem;
+    text-transform: capitalize;
+    font-weight: $extra-light;
+    text-align: start;
+    font-size: 0.3rem;
+  }
+}

@@ -1,0 +1,39 @@
+@import "../variables.scss";
+
+.chart-info-container {
+    .ts {
+        display: flex;
+        justify-content: center;
+        padding: 0.3rem 0.3rem;
+    }
+    .timespread-wrapper {
+      display: flex;
+      padding: 2px 0;
+      width: 9rem;
+      text-align: center;
+      > a {
+        color: black;
+        &:hover {
+            text-decoration: none;
+            color: green;
+            cursor: pointer;
+        }
+        &:nth-child(even) {
+          border-left: none;
+        }
+        &:nth-child(3) {
+            border-left: none;
+          }
+        border: 0.5px solid $grey-default;
+        padding: 0.1rem 0.2rem;
+        border: 1px solid #dadada;
+        border-radius: 0.5px;
+        background: $white-default;
+        font-size: 13px;
+      }
+    }
+}
+
+.active {
+  background-color: #e6f8f1;
+}

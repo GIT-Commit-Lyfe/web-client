@@ -1,0 +1,65 @@
+@import "../variables.scss";
+
+input:focus {
+  outline: none;
+}
+
+.landing-top-navbar {
+  background: lighten($black-default, 15%);
+  color: white;
+  letter-spacing: 0.13rem;
+}
+
+.landing-navbar {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.13rem;
+}
+
+ul {
+  display: flex;
+  li {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    display: flex;
+    a {
+      justify-content: center;
+      color: black;
+    }
+  }
+  .company-temp {
+    font-weight: $bold;
+    color: $black-default;
+    font-size: 1rem;
+    align-self: auto;
+  }
+}
+
+.company-logo {
+  object-fit: cover;
+  object-position: -55% 50%;
+  width: 5rem;
+  height: 2.4rem;
+}
+
+.company-logo-mobile {
+  object-fit: cover;
+  width: 4rem;
+  height: 2.9rem;
+}
+
+.search-bar {
+  min-width: 40vh;
+}
+
+.tagline-nav {
+  font-size: 3vh;
+  font-weight: $extra-light;
+}
+
+.now-btn {
+  background-color: white;
+  border: 1px solid $grey-default;
+  font-size: 0.6rem;
+  padding: 1vh;
+}

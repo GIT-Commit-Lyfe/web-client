@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+.price {
+    color: $brown-default;
+}
+
+.country-flag {
+    height: 2.6vh;
+}
+
+.card-img {
+    max-width: 30vh;
+    object-fit: cover;
+    max-height: 20vh;
+}
